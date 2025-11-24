@@ -1,174 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stick King Revival - Privacy Policy</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: #f7f7f7;
-        }
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            background: #fff;
-            padding: 25px 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3, h4 {
+            background: radial-gradient(circle at top left, #ffecd2 0, #fcb69f 25%, #fbc2eb 55%, #a18cd1 80%, #5a60ff 100%);
             color: #222;
         }
+
+        .page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 16px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-inner {
+            width: 100%;
+            max-width: 960px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #f9fafb;
+        }
+
+        .home-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            border: 1px solid rgba(248, 250, 252, 0.8);
+            background: rgba(15, 23, 42, 0.15);
+            color: #f9fafb;
+            font-size: 13px;
+            text-decoration: none;
+            backdrop-filter: blur(6px);
+            transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.12s ease;
+        }
+
+        .home-link:hover {
+            background: rgba(15, 23, 42, 0.3);
+            transform: translateY(-1px);
+            box-shadow: 0 8px 18px rgba(15, 23, 42, 0.35);
+        }
+
+        .home-link span.icon {
+            font-size: 14px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto 30px;
+            background: #ffffff;
+            padding: 28px 30px 32px;
+            border-radius: 16px;
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.35);
+            border: 1px solid rgba(148, 163, 184, 0.3);
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 6px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 24px 0 10px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 20px 0 8px;
+        }
+
+        h4 {
+            font-size: 16px;
+            margin: 12px 0 6px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ol {
+            margin: 0 0 16px 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
         a {
             color: #1976d2;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
-        ul {
-            padding-left: 20px;
+
+        .effective-date {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .footer-home {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .footer-home a {
+            font-size: 13px;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 20px 18px 24px;
+            }
+
+            header {
+                padding: 12px 14px;
+            }
+
+            .header-inner {
+                flex-direction: row;
+                gap: 10px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
         }
     </style>
 </head>
 
 <body>
-<div class="container">
-    <h1>Privacy Policy</h1>
-    <p><strong>Effective Date: October 26, 2025</strong></p>
+<div class="page">
+    <header>
+        <div class="header-inner">
+            <div class="logo-text">Stick King Revival</div>
+            <!-- Link về trang chủ -->
+            <a class="home-link" href="/" title="Back to Home">
+                <span class="icon">←</span>
+                <span>Back to Home</span>
+            </a>
+        </div>
+    </header>
 
-    <p>
-        Welcome to Stick King Labs and thanks for playing our games!
-        This privacy policy applies to the Stick King Revival game. 
-        We respect your privacy rights and recognize the importance of protecting the information collected about you.
-        This Privacy Policy is designed to provide clarity about the information we collect, how we use it to provide a better
-        gaming experience as well as how you can exercise your privacy rights.
-    </p>
+    <main>
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p class="effective-date"><strong>Effective Date: October 26, 2025</strong></p>
 
-    <p>
-        This Privacy Policy applies whenever you play our games or otherwise access any of our other products, services, content,
-        websites and/or the other domains provided by us, together referred to as "Services."
-        In this policy, "Stick King Labs" refers to Stick King Labs and its "Affiliates".
-        We may also refer to Stick King Labs as "we" or "us".
-    </p>
+            <p>
+                Welcome to Stick King Labs and thanks for playing our games!
+                This privacy policy applies to the Stick King Revival game. 
+                We respect your privacy rights and recognize the importance of protecting the information collected about you.
+                This Privacy Policy is designed to provide clarity about the information we collect, how we use it to provide a better
+                gaming experience as well as how you can exercise your privacy rights.
+            </p>
 
-    <p>
-        By using the Services, you agree to the collection, disclosure, storage and use of your information as outlined in this Privacy Policy.
-        If you do not want us to collect, store, use or share your information in the ways described, you should not use our Services.
-    </p>
+            <p>
+                This Privacy Policy applies whenever you play our games or otherwise access any of our other products, services, content,
+                websites and/or the other domains provided by us, together referred to as "Services."
+                In this policy, "Stick King Labs" refers to Stick King Labs and its "Affiliates".
+                We may also refer to Stick King Labs as "we" or "us".
+            </p>
 
-    <h2>Table of Contents</h2>
-    <ol>
-        <li>Information We Collect and Process</li>
-        <li>Purposes of Collecting, Processing and/or Disclosing</li>
-        <li>Sharing of Your Information</li>
-        <li>How to Exercise Your Rights</li>
-        <li>Data Deletion</li>
-        <li>In-app purchases</li>
-        <li>Age Limit</li>
-        <li>Privacy Policies of Linked Sites and Advertisers</li>
-        <li>Security of Your Information</li>
-        <li>Changes to This Privacy Policy</li>
-        <li>Contact Us</li>
-    </ol>
+            <p>
+                By using the Services, you agree to the collection, disclosure, storage and use of your information as outlined in this Privacy Policy.
+                If you do not want us to collect, store, use or share your information in the ways described, you should not use our Services.
+            </p>
 
-    <h3>1. Information We Collect and Process</h3>
+            <h2>Table of Contents</h2>
+            <ol>
+                <li>Information We Collect and Process</li>
+                <li>Purposes of Collecting, Processing and/or Disclosing</li>
+                <li>Sharing of Your Information</li>
+                <li>How to Exercise Your Rights</li>
+                <li>Data Deletion</li>
+                <li>In-app purchases</li>
+                <li>Age Limit</li>
+                <li>Privacy Policies of Linked Sites and Advertisers</li>
+                <li>Security of Your Information</li>
+                <li>Changes to This Privacy Policy</li>
+                <li>Contact Us</li>
+            </ol>
 
-    <h4>1.1 Data that you provide voluntarily</h4>
-    <p>We may collect:</p>
-    <ul>
-        <li>In-game user name and password</li>
-        <li>Your email address</li>
-        <li>Profile information (such as name, social networking accounts)</li>
-        <li>Your messages to our support team</li>
-        <li>Any other information you choose to provide</li>
-    </ul>
+            <h3>1. Information We Collect and Process</h3>
 
-    <h4>1.2 Information We Collect Automatically</h4>
-    <ul>
-        <li>Device identifiers</li>
-        <li>Game and platform details</li>
-        <li>IP address (approximate region only)</li>
-        <li>Device information (model, OS, language, carrier)</li>
-        <li>In-game events and game version</li>
-        <li>Country</li>
-        <li>Performance & debugging data</li>
-        <li>Gameplay progress & timestamps</li>
-        <li>Payment information in our Services</li>
-    </ul>
+            <h4>1.1 Data that you provide voluntarily</h4>
+            <p>We may collect:</p>
+            <ul>
+                <li>In-game user name and password</li>
+                <li>Your email address</li>
+                <li>Profile information (such as name, social networking accounts)</li>
+                <li>Your messages to our support team</li>
+                <li>Any other information you choose to provide</li>
+            </ul>
 
-    <h4>1.3 Information from Third-Party Sources</h4>
-    <p>
-        When you log in using Facebook, Google, WeChat or other platforms,
-        we may receive information based on your privacy settings on those services.
-    </p>
+            <h4>1.2 Information We Collect Automatically</h4>
+            <ul>
+                <li>Device identifiers</li>
+                <li>Game and platform details</li>
+                <li>IP address (approximate region only)</li>
+                <li>Device information (model, OS, language, carrier)</li>
+                <li>In-game events and game version</li>
+                <li>Country</li>
+                <li>Performance &amp; debugging data</li>
+                <li>Gameplay progress &amp; timestamps</li>
+                <li>Payment information in our Services</li>
+            </ul>
 
-    <ul>
-        <li>User ID</li>
-        <li>Friends list (if permitted)</li>
-        <li>Profile name and picture (if allowed)</li>
-    </ul>
+            <h4>1.3 Information from Third-Party Sources</h4>
+            <p>
+                When you log in using Facebook, Google, WeChat or other platforms,
+                we may receive information based on your privacy settings on those services.
+            </p>
+            <ul>
+                <li>User ID</li>
+                <li>Friends list (if permitted)</li>
+                <li>Profile name and picture (if allowed)</li>
+            </ul>
 
-    <h3>3. Sharing of Your Information</h3>
+            <h3>3. Sharing of Your Information</h3>
 
-    <p>We may share information with:</p>
-    <ul>
-        <li>Advertising partners</li>
-        <li>Analytics tools</li>
-        <li>Customer support providers</li>
-    </ul>
+            <p>We may share information with:</p>
+            <ul>
+                <li>Advertising partners</li>
+                <li>Analytics tools</li>
+                <li>Customer support providers</li>
+            </ul>
 
-    <p>Advertising networks may collect:</p>
-    <ul>
-        <li>Performance data</li>
-        <li>Device identifiers</li>
-        <li>Aggregated or de-identified info</li>
-        <li>Social network ID</li>
-    </ul>
+            <p>Advertising networks may collect:</p>
+            <ul>
+                <li>Performance data</li>
+                <li>Device identifiers</li>
+                <li>Aggregated or de-identified info</li>
+                <li>Social network ID</li>
+            </ul>
 
-    <p>Ad networks used:</p>
-    <ul>
-        <li><a href="https://support.google.com/admob/answer/6128543">AdMob</a></li>
-        <li><a href="https://vungle.com/privacy/">Vungle</a></li>
-        <li><a href="https://www.applovin.com/privacy/">AppLovin</a></li>
-        <li><a href="https://unity.com/legal/privacy-policy">Unity Ads</a></li>
-        <li><a href="https://firebase.google.com/support/privacy">Firebase</a></li>
-        <li><a href="https://www.facebook.com/about/privacy/update/">Facebook</a></li>
-    </ul>
+            <p>Ad networks used:</p>
+            <ul>
+                <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob</a></li>
+                <li><a href="https://vungle.com/privacy/" target="_blank" rel="noopener noreferrer">Vungle</a></li>
+                <li><a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener noreferrer">AppLovin</a></li>
+                <li><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity Ads</a></li>
+                <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase</a></li>
+                <li><a href="https://www.facebook.com/about/privacy/update/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            </ul>
 
-    <h3>4. How to Exercise Your Rights</h3>
-    <p>You may contact us for data deletion, access, or correction. iOS players may delete accounts via in-app options.</p>
+            <h3>4. How to Exercise Your Rights</h3>
+            <p>You may contact us for data deletion, access, or correction. iOS players may delete accounts via in-app options.</p>
 
-    <h3>5. Data Deletion</h3>
-    <p>We delete or anonymize personal data when:</p>
-    <ul>
-        <li>No longer needed for business purposes</li>
-        <li>You request deletion</li>
-        <li>Required by law</li>
-    </ul>
+            <h3>5. Data Deletion</h3>
+            <p>We delete or anonymize personal data when:</p>
+            <ul>
+                <li>No longer needed for business purposes</li>
+                <li>You request deletion</li>
+                <li>Required by law</li>
+            </ul>
 
-    <h3>6. In-app Purchases</h3>
-    <p>Virtual currency and virtual items have no real-world value and cannot be exchanged outside the game.</p>
+            <h3>6. In-app Purchases</h3>
+            <p>Virtual currency and virtual items have no real-world value and cannot be exchanged outside the game.</p>
 
-    <h3>8. Privacy Policies of Linked Sites</h3>
-    <p>We are not responsible for third-party websites linked from our Services.</p>
+            <h3>8. Privacy Policies of Linked Sites</h3>
+            <p>We are not responsible for third-party websites linked from our Services.</p>
 
-    <h3>9. Security of Your Information</h3>
-    <p>We use commercially acceptable means to protect your data, but no method is 100% secure.</p>
+            <h3>9. Security of Your Information</h3>
+            <p>We use commercially acceptable means to protect your data, but no method is 100% secure.</p>
 
-    <h3>10. Changes to This Privacy Policy</h3>
-    <p>This Policy may be updated periodically. Last updated: 2025-10-08</p>
+            <h3>10. Changes to This Privacy Policy</h3>
+            <p>This Policy may be updated periodically. Last updated: 2025-10-08</p>
 
-    <h3>11. Contact Us</h3>
-    <p>
-        If you have questions, contact us at:  
-        <a href="mailto:vngtung@gmail.com">vngtung@gmail.com</a>
-    </p>
+            <h3>11. Contact Us</h3>
+            <p>
+                If you have questions, contact us at:  
+                <a href="mailto:vngtung@gmail.com">vngtung@gmail.com</a>
+            </p>
 
+            <div class="footer-home">
+                <a href="/">← Back to Home</a>
+            </div>
+        </div>
+    </main>
 </div>
 </body>
 </html>
