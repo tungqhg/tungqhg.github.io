@@ -10,6 +10,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+  <!-- Google Analytics 4 - Replace G-CWJQ4938TL with your real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWJQ4938TL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CWJQ4938TL');
+  </script>
+
   <style>
     *,
     *::before,
@@ -440,6 +449,59 @@
     <p>A creation by <strong>Sticking Lab</strong>. <a href="https://play.google.com/store/apps/details?id=com.stick.king.revival">Available Now</a></p>
     <p class="ads-txt">The app-ads.txt file asl for at/<a href="/app-ads.txt">app-ads.txt</a>.</p>
   </footer>
+
+  <!-- GA4 Click Tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Track store button clicks
+      var appStoreBtn = document.getElementById('btn-app-store');
+      var googlePlayBtn = document.getElementById('btn-google-play');
+
+      if (appStoreBtn) {
+        appStoreBtn.addEventListener('click', function() {
+          gtag('event', 'click', {
+            event_category: 'store_button',
+            event_label: 'app_store',
+            value: 1
+          });
+        });
+      }
+
+      if (googlePlayBtn) {
+        googlePlayBtn.addEventListener('click', function() {
+          gtag('event', 'click', {
+            event_category: 'store_button',
+            event_label: 'google_play',
+            value: 1
+          });
+        });
+      }
+
+      // Track nav link clicks
+      var navLinks = document.querySelectorAll('.nav-links a');
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          gtag('event', 'click', {
+            event_category: 'nav_link',
+            event_label: link.textContent.trim().toLowerCase(),
+            value: 1
+          });
+        });
+      });
+
+      // Track footer "Available Now" link
+      var footerLinks = document.querySelectorAll('.footer a');
+      footerLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          gtag('event', 'click', {
+            event_category: 'footer_link',
+            event_label: link.textContent.trim().toLowerCase(),
+            value: 1
+          });
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
