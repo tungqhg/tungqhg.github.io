@@ -135,6 +135,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 40px;
       padding: 0 40px;
       max-width: 960px;
@@ -145,6 +146,12 @@
       flex-shrink: 0;
       width: 320px;
       margin-top: -20px;
+      animation: knightIdle 4s ease-in-out infinite;
+    }
+
+    @keyframes knightIdle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
     }
 
     .knight-image img {
@@ -192,9 +199,11 @@
     }
 
     /* ─── STORE BUTTONS ─── */
-    .store-section {
+    .store-area {
+      width: 100%;
       text-align: center;
-      padding: 30px 24px 16px;
+      padding: 20px 0 0;
+      order: 3;
     }
 
     .store-buttons {
@@ -293,17 +302,24 @@
         flex-direction: column;
         align-items: center;
         padding: 0 20px;
-        gap: 10px;
+        gap: 16px;
       }
 
       .knight-image {
         width: 240px;
         margin-top: 0;
+        order: 1;
+      }
+
+      .store-area {
+        order: 2;
+        padding: 10px 0;
       }
 
       .info-block {
         text-align: center;
         padding-top: 0;
+        order: 3;
       }
 
       .features li {
@@ -315,7 +331,7 @@
       }
 
       .store-btn img {
-        height: 44px;
+        height: 56px;
       }
     }
 
@@ -402,19 +418,19 @@
         </li>
       </ul>
     </div>
-  </section>
 
-  <!-- STORE DOWNLOAD -->
-  <section class="store-section" id="store-section">
-    <div class="store-buttons">
-      <a class="store-btn" href="https://apps.apple.com/fr/app/stick-legions-giant-war/id6474563190" title="Download on the App Store" id="btn-app-store">
-        <img src="/icon_appstore_small.png" alt="Download on the App Store" />
-      </a>
-      <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.stick.king.revival" title="Get it on Google Play" id="btn-google-play">
-        <img src="/icon_googleplay_small.png" alt="Get it on Google Play" />
-      </a>
+    <!-- STORE DOWNLOAD -->
+    <div class="store-area" id="store-section">
+      <div class="store-buttons">
+        <a class="store-btn" href="https://apps.apple.com/fr/app/stick-legions-giant-war/id6474563190" title="Download on the App Store" id="btn-app-store">
+          <img src="/icon_appstore_small.png" alt="Download on the App Store" />
+        </a>
+        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.stick.king.revival" title="Get it on Google Play" id="btn-google-play">
+          <img src="/icon_googleplay_small.png" alt="Get it on Google Play" />
+        </a>
+      </div>
+      <p class="platform-info">Platform: Android &amp; iOS, Technology: Unity, Powered by: AdMob, AppLovin, Vungle</p>
     </div>
-    <p class="platform-info">Platform: Android &amp; iOS, Technology: Unity, Powered by: AdMob, AppLovin, Vungle</p>
   </section>
 
   <hr class="divider" />
